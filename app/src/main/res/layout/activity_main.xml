@@ -4,12 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/margen_padding">
 
-    </GridLayout>
+        <ImageView
+            android:id="@+id/caja1"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corea"/>
+
+        <ImageView
+            android:id="@+id/caja2"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/japon"/>
+
+        <ImageView
+            android:id="@+id/caja3"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/china"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/margen_padding">
+
+        <ImageView
+            android:id="@+id/caja4"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/japon"/>
+
+        <ImageView
+            android:id="@+id/caja5"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/china"/>
+
+        <ImageView
+            android:id="@+id/caja6"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corea"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/margen_padding">
+
+        <ImageView
+            android:id="@+id/caja7"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/china"/>
+
+        <ImageView
+            android:id="@+id/caja8"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corea"/>
+
+        <ImageView
+            android:id="@+id/caja9"
+            android:layout_width="@dimen/ancho_small_padding"
+            android:layout_height="wrap_content"
+            android:src="@drawable/japon"/>
+
+    </LinearLayout>
 
 </LinearLayout>

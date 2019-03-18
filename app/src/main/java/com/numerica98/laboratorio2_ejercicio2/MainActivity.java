@@ -10,6 +10,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9;
+    private int numero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,33 +42,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
         int viewId = v.getId();
+        int[] img= {R.drawable.china, R.drawable.corea, R.drawable.japon};
+        numero = (int) Math.floor(Math.random()*(2+0+1));
+
         switch (viewId){
             case R.id.caja1:
-                img1.setImageResource(R.drawable.china);
+                img1.setImageResource(img[numero]);
                 break;
             case R.id.caja2:
-                img2.setImageResource(R.drawable.corea);
+                img2.setImageResource(img[numero]);
                 break;
             case R.id.caja3:
-                img3.setImageResource(R.drawable.japon);
+                img3.setImageResource(img[numero]);
                 break;
             case R.id.caja4:
-                img4.setImageResource(R.drawable.corea);
+                img4.setImageResource(img[numero]);
                 break;
             case R.id.caja5:
-                img5.setImageResource(R.drawable.japon);
+                img5.setImageResource(img[numero]);
                 break;
             case R.id.caja6:
-                img6.setImageResource(R.drawable.china);
+                img6.setImageResource(img[numero]);
                 break;
             case R.id.caja7:
-                img7.setImageResource(R.drawable.japon);
+                img7.setImageResource(img[numero]);
                 break;
             case R.id.caja8:
-                img8.setImageResource(R.drawable.china);
+                img8.setImageResource(img[numero]);
                 break;
             case R.id.caja9:
-                img9.setImageResource(R.drawable.corea);
+                img9.setImageResource(img[numero]);
                 break;
         }
     }
